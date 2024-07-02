@@ -13,12 +13,10 @@ export default function Navbar() {
     <nav className="py-6 fixed w-full flex items-center justify-center bg-slate-50 shadow border-b border-slate-300 ">
       <div className="w-[90%] lg:w-[85%]">
         <div className="flex items-center justify-between gap-4">
-          <div className="w-40 lg:w-56 z-50">
-            <Image
-              src={synproxi_text_logo}
-              alt="synproxi logo"
-              className="w-full object-contain"
-            />
+          <div className="z-50">
+            <p className="text-3xl font-bold bg-slate-50  shadow shadow-blue-600 py-1 px-2 rounded tracking-widest">
+              Syn<span className="text-blue-600">Proxi</span>
+            </p>
           </div>
 
           <div
@@ -30,7 +28,7 @@ export default function Navbar() {
           >
             <ul
               className={`flex gap-10  ${
-                menu ? "flex-col pl-2 order-2" : "items-center"
+                menu ? "flex-col pl-2 pt-20" : "items-center"
               }`}
             >
               <li className="cursor-pointer hover:text-blue-600">About</li>

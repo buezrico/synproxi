@@ -19,10 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dm_sans.className} bg-slate-50 w-full flex`}>
-        <div className="w-full flex flex-col items-center">
+      <body className={`${dm_sans.className} bg-slate-50 w-full h-full flex`}>
+        <div className="w-full h-full flex flex-col items-center">
           <Navbar />
-          <div className="w-[90%] lg:w-[85%]">{children}</div>
+          <div className="h-full w-[90%] lg:w-[85%]">{children}</div>
         </div>
       </body>
     </html>
