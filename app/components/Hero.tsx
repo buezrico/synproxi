@@ -11,15 +11,15 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <main className="min-h-screen w-full justify-center items-center flex flex-col-reverse md:flex-row gap-4 mt-32 md:mt-20 pt-10 md:pt-0">
-      <Slide>
-        <div className="h-full w-full sm:h-[70%] sm:w-[70%] md:h-full md:w-full flex items-center justify-center md:items-end">
+      <div className="h-full w-full sm:h-[70%] sm:w-[70%] md:h-full md:w-full flex items-center justify-center md:items-end">
+        <Slide>
           <Image
             src={girl_with_laptop}
             alt="girl with laptop"
             className="h-[70%] w-[70%]"
           />
-        </div>
-      </Slide>
+        </Slide>
+      </div>
 
       <div className="w-full flex flex-col gap-4">
         <Bounce>
@@ -45,14 +45,12 @@ export default function Hero() {
           />
         </p>
         <div className="mt-8 flex flex-col justify-center lg:flex-row gap-4 w-full">
-          <Bounce>
+          <Bounce cascade>
             <button className="group px-8 py-4 transition-all text-slate-50 bg-blue-600 hover:bg-blue-800 flex items-center justify-center gap-4 rounded-full shadow-lg hover:shadow-sm w-full lg:w-fit">
               <p className="font-medium">Find Course</p>
 
               <IoIosArrowForward size={24} />
             </button>
-          </Bounce>
-          <Bounce>
             <button className="group px-8 py-4 transition-all text-blue-600 bg-transparent border border-blue-600 hover:border-blue-800 flex items-center justify-center gap-4 rounded-full shadow-lg hover:shadow-sm duration-300 w-full lg:w-fit">
               <p className="font-medium">Get in Touch</p>
 
