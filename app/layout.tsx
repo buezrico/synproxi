@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { Sora } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
-const dm_sans = DM_Sans({
+const sora = Sora({
   subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dm_sans.className} bg-slate-50 w-full h-full flex`}>
+      <body className={`${sora.className} bg-blue-50 w-full h-full flex`}>
         <div className="w-full h-full flex flex-col items-center">
           <Navbar />
           <div className="h-full w-[90%] lg:w-[85%]">{children}</div>
