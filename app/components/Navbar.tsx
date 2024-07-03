@@ -25,7 +25,7 @@ export default function Navbar() {
             }`}
           >
             <ul
-              className={`flex gap-10  ${
+              className={`flex gap-10 text-slate-600 text-sm  ${
                 menu ? "flex-col pl-2 pt-20" : "items-center"
               }`}
             >

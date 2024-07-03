@@ -13,16 +13,12 @@ export default function Hero() {
     <main className="min-h-screen w-full justify-center items-center flex flex-col md:flex-row gap-4 mt-32 md:mt-20 pt-10 md:pt-0">
       <div className="w-full flex flex-col gap-4">
         <Bounce>
-          <h1 className="text-5xl xl:text-7xl font-bold leading-snug md:leading-snug text-slate-800">
-            Learn<span className="text-blue-600 px-2 font-bold">Today,</span>{" "}
-            <br />
-            Lead<span className="text-blue-600 px-2 font-bold">
-              Tomorrow
-            </span>{" "}
-            in Tech.
+          <h1 className="text-5xl xl:text-7xl font-medium leading-snug md:leading-snug text-slate-800">
+            Learn <span className="text-blue-600">Today,</span> <br />
+            Lead <span className="text-blue-600">Tomorrow</span> in Tech.
           </h1>
         </Bounce>
-        <p className="font-medium text-slate-600">
+        <p className="text-slate-600">
           <Typewriter
             words={[
               "Join Synproxi and gain the skills you need to succeed in the ever-evolving tech landscape.",
@@ -37,12 +33,12 @@ export default function Hero() {
         <div className="mt-8 flex flex-col lg:flex-row gap-4 w-full">
           <Bounce cascade>
             <button className="group px-8 py-4 transition-all text-slate-50 bg-blue-600 hover:bg-blue-800 flex items-center justify-center gap-4 rounded-full shadow-lg hover:shadow-sm w-full lg:w-fit">
-              <p className="font-medium">Find Course</p>
+              <p className="">Find Course</p>
 
               <IoIosArrowForward size={24} />
             </button>
             <button className="group px-8 py-4 transition-all text-blue-600 bg-transparent border border-blue-600 hover:border-blue-800 flex items-center justify-center gap-4 rounded-full shadow-lg hover:shadow-sm duration-300 w-full lg:w-fit">
-              <p className="font-medium">Get in Touch</p>
+              <p className="">Get in Touch</p>
 
               <FiMessageCircle size={22} />
             </button>
