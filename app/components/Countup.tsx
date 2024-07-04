@@ -4,8 +4,8 @@ import CountUp from "react-countup";
 
 export default function Countup() {
   return (
-    <div className="h-full w-full py-10">
-      <div className="py-20">
+    <div className="h-full w-full">
+      <div className="">
         <div className="lg-gap-8 flex flex-col items-center gap-12 md:flex-row">
           <div className="w-full text-center md:w-2/5">
             <h3 className="text-2xl font-medium">
