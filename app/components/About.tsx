@@ -4,7 +4,6 @@ import friends from "@/public/assets/images/friends.jpg";
 import woman_sitting from "@/public/assets/images/woman_sitting.jpg";
 import red_shirt_man from "@/public/assets/images/red_shirt_man.jpg";
 import whatsapp from "@/public/assets/icons/whatsapp.png";
-import { IoIosArrowForward } from "react-icons/io";
 import { FaPeopleGroup } from "react-icons/fa6";
 
 export default function About() {
