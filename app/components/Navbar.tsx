@@ -51,7 +51,7 @@ export default function Navbar() {
           </div>
 
           <div
-            className="group-hover:bg-blue-200 transition-all flex items-center justify-center p-2 bg-blue-100 text-blue-600 rounded lg:hidden cursor-pointer shadow hover:shaodw-lg hover:text-blue-800"
+            className="group-hover:bg-blue-200 transition-all flex items-center justify-center p-2 bg-blue-100 border border-blue-600 text-blue-600 rounded lg:hidden cursor-pointer shadow hover:shaodw-lg hover:text-blue-800"
             onClick={() => setMenu(!menu)}
           >
             {menu ? <AiOutlineClose size={24} /> : <HiMenuAlt3 size={24} />}
