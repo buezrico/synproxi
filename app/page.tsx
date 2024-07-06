@@ -2,6 +2,7 @@ import Countup from "@/app/components/Countup";
 import Courses from "@/app/components/Courses";
 import Hero from "@/app/components/Hero";
 import About from "@/app/components/About";
+import PopularCourses from "@/app/components/PopularCourses";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Courses />
       <About />
       <Countup />
+      <PopularCourses />
     </div>
   );
 }
