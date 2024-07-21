@@ -18,12 +18,12 @@ export default function About() {
         <Image
           src={woman_sitting}
           alt=""
-          className="h-24 w-24 sm:h-40 sm:w-40 rounded-full absolute -top-5 left-0 shadow border-2 border-blue-600 p-1 animate-bounce"
+          className="h-20 w-20 sm:h-32 sm:w-32 rounded-full absolute -top-5 left-0 shadow border-2 border-blue-600 p-1 animate-bounce"
         />
         <Image
           src={red_shirt_man}
           alt=""
-          className="h-24 w-24 sm:h-40 sm:w-40 rounded-3xl absolute -bottom-20 left-24 shadow border-2 border-red-600 p-1 -rotate-6"
+          className="h-20 w-20 sm:h-32 sm:w-32 rounded-3xl absolute -bottom-20 left-24 shadow border-2 border-red-600 p-1 -rotate-6"
         />
       </div>
 

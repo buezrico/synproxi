@@ -3,6 +3,7 @@ import Courses from "@/app/components/Courses";
 import Hero from "@/app/components/Hero";
 import About from "@/app/components/About";
 import PopularCourses from "@/app/components/PopularCourses";
+import Whatsapp from "@/app/components/Whatsapp";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Countup />
       <PopularCourses />
+      <Whatsapp />
     </div>
   );
 }
