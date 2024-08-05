@@ -7,6 +7,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { Typewriter } from "react-simple-typewriter";
 import girl_with_laptop from "@/public/assets/images/girl_with_laptop.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -32,11 +33,13 @@ export default function Hero() {
         </p>
         <div className="mt-8 flex flex-col lg:flex-row gap-4 w-full">
           <Bounce cascade>
-            <button className="group px-8 py-4 transition-all text-slate-50 bg-blue-600 hover:bg-blue-800 flex items-center justify-center gap-4 rounded-full shadow-lg hover:shadow-sm w-full lg:w-fit">
-              <p className="">Find Course</p>
+            <Link href="#courses">
+              <button className="group px-8 py-4 transition-all text-slate-50 bg-blue-600 hover:bg-blue-800 flex items-center justify-center gap-4 rounded-full shadow-lg hover:shadow-sm w-full lg:w-fit">
+                <p className="">Find Course</p>
 
-              <IoIosArrowForward size={24} />
-            </button>
+                <IoIosArrowForward size={24} />
+              </button>
+            </Link>
             <button className="group px-8 py-4 transition-all text-blue-600 bg-transparent border border-blue-600 hover:border-blue-800 flex items-center justify-center gap-4 rounded-full shadow-lg hover:shadow-sm duration-300 w-full lg:w-fit">
               <p className="">Get in Touch</p>
 

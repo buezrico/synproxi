@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { HiMenuAlt3 } from "react-icons/hi";
@@ -39,15 +40,20 @@ export default function Navbar() {
               </li>
             </ul>
 
-            <button
-              className={`group px-4 py-2 transition-all text-slate-50 bg-blue-600 hover:bg-blue-800 hover:shadow-lg duration-300 flex items-center gap-4 rounded w-fit`}
+            <Link
+              href={"https://chat.whatsapp.com/JmSB2Mgpwrr7NWAzjEpbyq"}
+              target="_blank"
             >
-              <p className="font-medium text-sm">Join For Free</p>
+              <button
+                className={`group px-4 py-2 transition-all text-slate-50 bg-blue-600 hover:bg-blue-800 hover:shadow-lg duration-300 flex items-center gap-4 rounded w-fit`}
+              >
+                <p className="font-medium text-sm">Join For Free</p>
 
-              <div className="group-hover:bg-blue-200 transition-all flex items-center justify-center p-2 bg-blue-100 text-blue-600 rounded">
-                <IoIosArrowForward size={24} />
-              </div>
-            </button>
+                <div className="group-hover:bg-blue-200 transition-all flex items-center justify-center p-2 bg-blue-100 text-blue-600 rounded">
+                  <IoIosArrowForward size={24} />
+                </div>
+              </button>
+            </Link>
           </div>
 
           <div

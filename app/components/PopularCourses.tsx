@@ -5,10 +5,14 @@ import forex_trading from "@/public/assets/images/forex_trading.jpg";
 import ui_ux from "@/public/assets/images/ui_ux.jpg";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { IoIosArrowForward } from "react-icons/io";
+import Link from "next/link";
 
 export default function PopularCourses() {
   return (
-    <div className="flex flex-col lg:flex-row gap-8 py-20 items-center md:justify-between">
+    <div
+      className="flex flex-col lg:flex-row gap-8 py-20 items-center md:justify-between"
+      id="courses"
+    >
       <div className="w-full flex flex-col gap-4 mt-20 lg:mt-0">
         <p className="text-blue-600">Our Courses</p>
         <p className="text-slate-800 text-3xl md:text-4xl">
@@ -27,12 +31,17 @@ export default function PopularCourses() {
                 Web Development
               </p>
 
-              <button
-                className={`py-2 transition-all text-blue-600 text-xs md:text-sm duration-300 flex items-center gap-2 rounded w-fit hover:underline place-self-end px-4 bg-blue-100`}
+              <Link
+                href={"https://chat.whatsapp.com/Cm6YxOJbHU6DwJDeG5i7PG"}
+                target="_blank"
               >
-                <p className="">Enroll Now</p>
-                <IoIosArrowForward />
-              </button>
+                <button
+                  className={`py-2 transition-all text-blue-600 text-xs md:text-sm duration-300 flex items-center gap-2 rounded w-fit hover:underline place-self-end px-4 bg-blue-100`}
+                >
+                  <p className="">Enroll Now</p>
+                  <IoIosArrowForward />
+                </button>
+              </Link>
             </div>
           </div>
           <div className="w-full px-2">
@@ -44,12 +53,17 @@ export default function PopularCourses() {
             <div className="mt-4 flex flex-col gap-2">
               <p className="text-sm font-medium text-red-600">UI/UX Design</p>
 
-              <button
-                className={`py-2 transition-all text-red-600 text-xs md:text-sm duration-300 flex items-center gap-2 rounded w-fit hover:underline place-self-end px-4 bg-red-100`}
+              <Link
+                href={"https://chat.whatsapp.com/GhF82W7lyBlANhkcWKyMFt"}
+                target="_blank"
               >
-                <p className="">Enroll Now</p>
-                <IoIosArrowForward />
-              </button>
+                <button
+                  className={`py-2 transition-all text-red-600 text-xs md:text-sm duration-300 flex items-center gap-2 rounded w-fit hover:underline place-self-end px-4 bg-red-100`}
+                >
+                  <p className="">Enroll Now</p>
+                  <IoIosArrowForward />
+                </button>
+              </Link>
             </div>
           </div>
           <div className="w-full  px-2">
@@ -63,12 +77,17 @@ export default function PopularCourses() {
                 Forex Trading
               </p>
 
-              <button
-                className={`py-2 transition-all text-green-600 text-xs md:text-sm duration-300 flex items-center gap-2 rounded w-fit hover:underline place-self-end px-4 bg-green-100`}
+              <Link
+                href={"https://chat.whatsapp.com/HJDU7BpUs7s5baJkosTe7O"}
+                target="_blank"
               >
-                <p className="">Enroll Now</p>
-                <IoIosArrowForward />
-              </button>
+                <button
+                  className={`py-2 transition-all text-green-600 text-xs md:text-sm duration-300 flex items-center gap-2 rounded w-fit hover:underline place-self-end px-4 bg-green-100`}
+                >
+                  <p className="">Enroll Now</p>
+                  <IoIosArrowForward />
+                </button>
+              </Link>
             </div>
           </div>
         </div>
