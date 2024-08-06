@@ -5,6 +5,7 @@ import About from "@/app/components/About";
 import PopularCourses from "@/app/components/PopularCourses";
 import Whatsapp from "@/app/components/Whatsapp";
 import Discord from "@/app/components/Discord";
+import Testimonials from "@/app/components/Testimonials";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <PopularCourses />
       <Discord />
       <Whatsapp />
+      <Testimonials />
     </div>
   );
 }

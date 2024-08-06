@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
-import { Sora } from "next/font/google";
+import { Sora, Grey_Qo } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
 const sora = Sora({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+});
+export const grey_qo = Grey_Qo({
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
