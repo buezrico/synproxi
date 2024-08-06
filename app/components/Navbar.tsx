@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
+import { FaDiscord, FaWhatsapp } from "react-icons/fa6";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { IoIosArrowForward } from "react-icons/io";
 
@@ -35,29 +36,42 @@ export default function Navbar() {
               <li className="cursor-pointer hover:text-blue-600">
                 Testimonials
               </li>
-              <li className="cursor-pointer hover:text-blue-600">
+              {/* <li className="cursor-pointer hover:text-blue-600">
                 Instructors
-              </li>
+              </li> */}
             </ul>
 
-            <Link
-              href={"https://chat.whatsapp.com/JmSB2Mgpwrr7NWAzjEpbyq"}
-              target="_blank"
-            >
-              <button
-                className={`group px-4 py-2 transition-all text-slate-50 bg-blue-600 hover:bg-blue-800 hover:shadow-lg duration-300 flex items-center gap-4 rounded w-fit`}
-              >
-                <p className="font-medium text-sm">Join For Free</p>
+            <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-2">
+              <Link href={"https://discord.gg/HV3ehxqZ"} target="_blank">
+                <button
+                  className={`group px-4 py-2 transition-all text-slate-50 bg-blue-600 hover:bg-blue-800 hover:shadow-lg duration-300 flex items-center gap-4 rounded w-fit`}
+                >
+                  <p className="font-medium text-sm">Join Discord</p>
 
-                <div className="group-hover:bg-blue-200 transition-all flex items-center justify-center p-2 bg-blue-100 text-blue-600 rounded">
-                  <IoIosArrowForward size={24} />
-                </div>
-              </button>
-            </Link>
+                  <div className="group-hover:bg-blue-200 transition-all flex items-center justify-center p-2 bg-blue-100 text-blue-600 rounded">
+                    <FaDiscord />
+                  </div>
+                </button>
+              </Link>
+              <Link
+                href={"https://chat.whatsapp.com/JmSB2Mgpwrr7NWAzjEpbyq"}
+                target="_blank"
+              >
+                <button
+                  className={`group px-4 py-2 transition-all text-slate-50 bg-green-600 hover:bg-green-800 hover:shadow-lg duration-300 flex items-center gap-4 rounded w-fit`}
+                >
+                  <p className="font-medium text-sm">Join Whatsapp</p>
+
+                  <div className="group-hover:bg-green-200 transition-all flex items-center justify-center p-2 bg-green-100 text-green-600 rounded">
+                    <FaWhatsapp />
+                  </div>
+                </button>
+              </Link>
+            </div>
           </div>
 
           <div
-            className="group-hover:bg-blue-200 transition-all flex items-center justify-center p-2 bg-blue-100 border border-blue-600 text-blue-600 rounded lg:hidden cursor-pointer shadow hover:shaodw-lg hover:text-blue-800"
+            className="group-hover:bg-blue-200 transition-all flex items-center justify-center p-2 bg-blue-100 border border-blue-600 text-blue-600 rounded lg:hidden cursor-pointer shadow hover:shadow-lg hover:text-blue-800"
             onClick={() => setMenu(!menu)}
           >
             {menu ? <AiOutlineClose size={24} /> : <HiMenuAlt3 size={24} />}

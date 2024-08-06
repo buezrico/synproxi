@@ -4,6 +4,7 @@ import Hero from "@/app/components/Hero";
 import About from "@/app/components/About";
 import PopularCourses from "@/app/components/PopularCourses";
 import Whatsapp from "@/app/components/Whatsapp";
+import Discord from "@/app/components/Discord";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Countup />
       <PopularCourses />
+      <Discord />
       <Whatsapp />
     </div>
   );
