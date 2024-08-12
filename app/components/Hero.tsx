@@ -15,9 +15,8 @@ export default function Hero() {
       <div className="w-full flex flex-col gap-4">
         <Bounce>
           <h1 className="text-5xl xl:text-7xl font-medium leading-snug md:leading-snug text-slate-800">
-            {/* Learn <span className="text-blue-600">Today,</span> <br />
-            Lead <span className="text-blue-600">Tomorrow</span> in Tech. */}
-            COHORT 2
+            Learn <span className="text-blue-600">Today,</span> <br />
+            Lead <span className="text-blue-600">Tomorrow</span> in Tech.
           </h1>
         </Bounce>
         <p className="text-slate-600">
