@@ -3,6 +3,7 @@
 import baah from "@/public/assets/images/baah.jpg";
 import mohammed from "@/public/assets/images/mohammed.jpg";
 import silvernus from "@/public/assets/images/silvernus.jpg";
+import seyi from "@/public/assets/images/seyi.jpg";
 import { Caveat } from "next/font/google";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -37,12 +38,12 @@ export default function Testimonials() {
         </h2>
       </div>
 
-      <div className="flex flex-col items-center justify-between gap-10">
-        <div
-          className="flex h-full w-[90%] flex-col gap-8 text-center md:w-[80%] lg:w-[60%] cursor-pointer"
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
+      <div
+        className="flex flex-col items-center justify-between gap-10"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <div className="flex h-full w-[90%] flex-col gap-8 text-center md:w-[80%] lg:w-[60%] cursor-pointer">
           <div className="flex flex-col gap-1">
             <p
               className={`${grey_qo.className} text-3xl font-bold text-blue-600`}
@@ -93,6 +94,13 @@ export default function Testimonials() {
 }
 
 export const testimonials = [
+  {
+    name: "Oluwaseyi Ibitola Tommy",
+    position: "Front-End Developer",
+    testimony:
+      "I got to know about Synproxi Web Development online class through an online platform. At Synproxi tech, I was able to sharpen my skills in web development. The practical assignments and real-world projects gave me hands-on experience and built my confidence to tackle complex challenges.  I am grateful to Synproxi for this great opportunity.",
+    image: seyi,
+  },
   {
     name: "Ifoghale Silvernus",
     position: "Front-End Developer",
