@@ -74,7 +74,7 @@ export default function About() {
             </button>
           </Link>
 
-          <Link
+          {/* <Link
             href={"https://call.whatsapp.com/voice/L9Ka1fP8ZLQwyikybhExWH "}
             target="_blank"
           >
@@ -85,7 +85,7 @@ export default function About() {
                 <p className="font-medium">+234-810-9169-579</p>
               </div>
             </div>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

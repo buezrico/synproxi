@@ -11,10 +11,10 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <main className="min-h-screen w-full justify-center items-center flex flex-col md:flex-row gap-4 mt-32 md:mt-20 pt-10 md:pt-0">
+    <main className="min-h-screen w-full justify-center items-center flex flex-col lg:flex-row gap-4 mt-32 lg:mt-20 pt-10 md:pt-0">
       <div className="w-full flex flex-col gap-4">
         <Bounce>
-          <h1 className="text-5xl xl:text-7xl font-medium leading-snug md:leading-snug text-slate-800">
+          <h1 className="text-5xl xl:text-7xl font-medium leading-snug md:leading-snug text-slate-800 text-balance">
             Learn <span className="text-blue-600">Today,</span> <br />
             Lead <span className="text-blue-600">Tomorrow</span> in Tech.
           </h1>
@@ -57,7 +57,7 @@ export default function Hero() {
           <Image
             src={girl_with_laptop}
             alt="girl with laptop"
-            className="h-[70%] w-[70%]"
+            className="h-[70%] w-[70%] md:h-[50%] md:w-[50%] lg:h-[70%] lg:w-[70%] "
           />
         </Slide>
       </div>
