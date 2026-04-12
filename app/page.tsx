@@ -1,23 +1,21 @@
-import Countup from "@/app/components/Countup";
-import Courses from "@/app/components/Courses";
-import Hero from "@/app/components/Hero";
-import About from "@/app/components/About";
-import PopularCourses from "@/app/components/PopularCourses";
-import Whatsapp from "@/app/components/Whatsapp";
-import Discord from "@/app/components/Discord";
-import Testimonials from "@/app/components/Testimonials";
+import Hero from "./components/Hero";
+import Services from "./components/Services";
+import Stats from "./components/Stats";
+import FeaturedWork from "./components/FeaturedWork";
+import Process from "./components/Process";
+import Testimonials from "./components/Testimonials";
+import CTABand from "./components/CTABand";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-8 md:gap-16 lg:gap-20 pb-20">
+    <div>
       <Hero />
-      <Courses />
-      <About />
-      <Countup />
-      <PopularCourses />
-      <Discord />
-      <Whatsapp />
+      <Services />
+      <Stats />
+      <FeaturedWork />
+      <Process />
       <Testimonials />
+      <CTABand />
     </div>
   );
 }
