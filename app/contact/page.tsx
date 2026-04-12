@@ -83,10 +83,24 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="text-xs text-outline mb-1">LOCATION</p>
-                  <p className="text-lg font-medium">Remote First / Berlin, DE</p>
+                  <p className="text-lg font-medium">Nigeria</p>
                 </div>
               </div>
             </div>
+              <div className="flex items-start gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                  <span className="material-symbols-outlined">call</span>
+                </div>
+                <div>
+                  <p className="text-xs text-outline mb-1">PHONE</p>
+                  <a
+                    href="tel:+2348109169579"
+                    className="text-lg font-medium hover:text-primary transition-colors"
+                  >
+                    +234 810 916 9579
+                  </a>
+                </div>
+              </div>
           </section>
 
           {/* Community links */}
@@ -138,16 +152,11 @@ export default function ContactPage() {
             </div>
           </section>
 
-          {/* Map visual */}
-          <div className="relative h-64 rounded-2xl overflow-hidden grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
-            <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmXjfgY9_v-WiUQyo1c_TZFnaTcLyrvs9N-vqzfZD6anz0qv8DEYkHzaguELLjNmxTqFOMhEvtv6sCa-x-I-fuLZjXtcuSo6WDxEW2TYKyMpwd3AXn_g5usEf1ij9Yu93m0ndBe5PgZqvP3LaPeOx9Apv5Gw13z2Tvq4okt1ZUYo6r-SJGTe8MOeDeTQAG7E-u45neQHXXXdiXsgtrlu3Au8QjoUAofl_wCw2H-Trh-VqU4LdNHvaCiEcgWGveFw-SCwJFHnEamnxr"
-              alt="Berlin map"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-surface to-transparent" />
-            <div className="absolute bottom-4 left-4 flex items-center">
-              <span className="pulse-dot mr-2" />
+          {/* Availability badge */}
+          <div className="relative h-32 rounded-2xl overflow-hidden bg-surface-container-low border border-outline-variant/10 flex items-center justify-center">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
+            <div className="relative flex items-center gap-3">
+              <span className="pulse-dot" />
               <span className="text-xs uppercase tracking-widest text-on-surface">
                 Available for projects
               </span>

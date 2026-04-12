@@ -10,98 +10,95 @@ type CaseStudy = {
   title: string;
   description: string;
   image: string;
+  secondImage?: string;
   imageAlt: string;
   badge?: string;
   techTags?: string[];
   layout: "large" | "tall" | "square" | "wide" | "medium";
   filter: string;
+  mobile?: boolean;
 };
 
 const caseStudies: CaseStudy[] = [
   {
-    id: "acme-labs",
+    id: "careplus",
     number: "01",
-    category: "FINTECH",
-    tag: "Web Engineering",
-    title: "Acme Labs",
-    description:
-      "Architected a high-frequency trading platform with sub-millisecond latency and real-time risk assessment modules.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBIOw9BjoXXJvpVVJMX_P25yASA8HdVfCITIStYUC8qhwgZTfl3EzTlbPXjoNA5_jKwocG8iKQwqstIUeSq5J9hEIcUo9UZHk2yrAa2Hhu1i3tnRfKNBXMDDvAq-lutRfMy2Gtaaz6lkgMzYLXOoUpoWxHT5fwPV6V_j2WYivlJauSSiJdqb0Mxsuv9hXTakkyWZL1XYWb6t8q71y6jXKZ7G4NOxY6IxQxl8RMHZBA8tjDmvqb02FvH09pQaB3OXX7FvDfBGV1n8bFM",
-    imageAlt: "Fintech dashboard",
-    layout: "large",
-    filter: "web",
-  },
-  {
-    id: "northwind",
-    number: "02",
-    category: "LOGISTICS AI",
-    tag: "AI Integration",
-    title: "Northwind",
-    description:
-      "Implementing predictive maintenance and supply chain optimization using proprietary machine learning models.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBVLhV6dOT4ZheX388koLq3OKgr2lfduiHcRkYXwRHCQjQcpW1-tvbHFYSoAqc8x_TJdtrv9rn21zp88gOgVKdL05_lcTC5LMZPN7DGviSCg2BGsKm9Oz-MFaaTBOe-kABi2tKzJxzyQm77HAwmo260WsfIHHeN9fk89u2btm0OMIT29Pm0c06oCOpu7saWfyi8meb-Xl2Ur3M2hfSWca0E4wwKWJ5aG8Lpsy28BBgHd4tZo2OgNBQPt9xrDEu-RWaWwwP8JVNVa3Ki",
-    imageAlt: "Logistics AI visualization",
-    layout: "tall",
-    filter: "ai",
-  },
-  {
-    id: "helix-robotics",
-    number: "03",
-    category: "HARDWARE",
-    tag: "Mobile Engineering",
-    title: "Helix Robotics",
-    description:
-      "Low-level firmware control systems for precision manufacturing arms with zero-downtime requirements.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAPoME3iPHRn4QQZARKokDoePxwf4vRwfIbnXgB-M6gRdsKqiUFd4v8p6qGhRAfSvxHQ15dZKHFsBJIJU6kD1iAt70LoIi1py7xMP1CJZNqpdfhc2JeVuyzLBU_XggEjDZGjawMCcKwZuhK7Ed9LQm62YqoeCDD1dNyjNBiTOQgJFnZMl8JSVeCaGrr346goG6s9CToPpJcf2psN-JkiYvqaoOLLcXiBv73pFQtYn_ProEOfGH1k3rmvFWsek5Vj7uCaq8SXLgKTK4-",
-    imageAlt: "Robot arm control",
-    layout: "square",
-    filter: "mobile",
-  },
-  {
-    id: "skyward",
-    number: "04",
-    category: "SAAS",
-    tag: "Design & Dev",
-    title: "Skyward",
-    description:
-      "A complete digital transformation of project management workflows for enterprise cloud infrastructure teams.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAQ6L5MKedA-014X4gGknmSy70tohCQEX2TN_aoRlnxs2Z8iSuhKg-8hwrhgp4ZWNZ8uhJqWeCutNWPo7qFdXxT7TFMF2nB9SM9REAllrGRAeaJJ0ebiOaMXEceSeiOUT-QmcTTKT4O2b7SEFYqCvn2oNKa9M0-uz3nHpAsGJLWW_nbV8Se0_oOTe7CS48zhbd2Di2ECOxro7Jj1bM_GLgf5BoGWcGZFU6iVWlPfC31aIywVPqVdIyW5TK0YZi7Pg3nk5CJ_FO7QPhV",
-    imageAlt: "SaaS interface",
-    layout: "wide",
-    filter: "design",
-  },
-  {
-    id: "veridian",
-    number: "05",
-    category: "E-COMMERCE",
-    tag: "Web Engineering",
-    title: "Veridian",
-    description:
-      "Scalable headless commerce engine supporting millions of global transactions with a custom checkout experience.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCiUzUfDiCF1LJ4H69fT-Bst7nuN5tnHYLMr09Oh78iYlgZVv2n_Z8dg2cB6pBTfKc55kVHUyG2jdt7v0jQGpLy6Ugl47I6LLr3Xw7Zjv5yunEX1q_5tU6SMqufDBkB-IpcplKxSwLRNhqLrm863AlNg6bFc9Ol-2fK3qyhC4Gb5eM_L3mRwlsI56e2Lm4jWPyXcmx6uTFWA13-suuBkPodNmsbIq0amBIsUH4uyjp6PL77z2lWgUst2ApbIsVGhxTvJdKeVcB2urnx",
-    imageAlt: "E-commerce store",
-    techTags: ["NODE.JS", "REACT", "STRIPE"],
-    layout: "medium",
-    filter: "web",
-  },
-  {
-    id: "peak-performance",
-    number: "06",
     category: "HEALTHTECH",
-    tag: "Mobile Engineering",
-    title: "Peak Performance",
+    tag: "Mobile App",
+    title: "CarePlus",
     description:
-      "Health-focused mobile application leveraging biometric data to provide personalized athletic training regimens.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAMFCTmtt1TC8T6GjGDsqus08h2s54RVOUaH4EUoyPoKUhX8NTyksigQI7yxr9Y1D48KddfxSfGspydBMkhY40z8J4RpZbUwnAVPzzMzwXi3lUql_i2x0h8_OvVRruMQApn7KfvFtLp4RUOvZYEP-RiTYlPDrGpsR47z1UA_Wy-O6PJDHtfzcB93Lzl8jIECePUC6SQnhKBIX3zwdM9G6IgBnou7XMoTfo9VLiYHwJLSUns-GuZZAt9uEcEzWLafWQozCPpiyCfqmJD",
-    imageAlt: "Healthtech mobile app",
-    layout: "medium",
+      "A modern telemedicine platform connecting patients with healthcare providers. Real-time video consultations, secure messaging, and an intuitive mobile experience.",
+    image: "/assets/images/projects/careplus-home.PNG",
+    secondImage: "/assets/images/projects/careplus-login.PNG",
+    imageAlt: "CarePlus telemedicine app",
+    layout: "large",
     filter: "mobile",
+    mobile: true,
+  },
+  {
+    id: "medhub",
+    number: "02",
+    category: "HEALTHTECH",
+    tag: "Web Platform",
+    title: "MedHub",
+    description:
+      "An integrated online platform for leading diagnostic centers in Nigeria offering comprehensive medical test services with advanced technology.",
+    image: "/assets/images/projects/medhub.png",
+    imageAlt: "MedHub medical testing platform",
+    layout: "tall",
+    filter: "web",
+  },
+  {
+    id: "aplus",
+    number: "03",
+    category: "EDTECH",
+    tag: "Web Platform",
+    title: "A-Plus",
+    description:
+      "A comprehensive online examination platform designed for students, examiners, and administrators to streamline the assessment process.",
+    image: "/assets/images/projects/aplus.png",
+    imageAlt: "A-Plus examination platform",
+    layout: "square",
+    filter: "web",
+  },
+  {
+    id: "optimal-gems",
+    number: "04",
+    category: "CONSTRUCTION",
+    tag: "Web Development",
+    title: "Optimal Gems",
+    description:
+      "Corporate website for Optimal Gems Resources Limited — specialists in piling works, civil engineering, and building construction with over 15 years of expertise across Nigeria.",
+    image: "/assets/images/projects/optimalgems.png",
+    imageAlt: "Optimal Gems Resources website",
+    layout: "wide",
+    filter: "web",
+  },
+  {
+    id: "assetplus",
+    number: "05",
+    category: "FINTECH",
+    tag: "Web Development",
+    title: "AssetPlus",
+    description:
+      "Nigeria's leading real estate financing platform providing finance for dream houses and landed properties in Nigeria and in diaspora.",
+    image: "/assets/images/projects/assetplus.png",
+    imageAlt: "AssetPlus real estate financing",
+    layout: "medium",
+    filter: "web",
+  },
+  {
+    id: "the-grand-cobbler",
+    number: "06",
+    category: "ON-DEMAND",
+    tag: "Web Development",
+    title: "The Grand Cobbler",
+    description:
+      "Lagos' finest shoes and leather goods repair company. An on-demand service platform providing modern aftercare for premium footwear.",
+    image: "/assets/images/projects/thegrandcobbler.png",
+    imageAlt: "The Grand Cobbler shoe repair service",
+    layout: "medium",
+    filter: "design",
   },
 ];
 
@@ -130,11 +127,28 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
       className={`${grid} group relative overflow-hidden rounded-xl bg-surface-container-lowest border border-outline-variant/10 transition-all duration-500 hover:border-primary/30`}
     >
       <div className={`${aspect} w-full overflow-hidden`}>
-        <img
-          src={study.image}
-          alt={study.imageAlt}
-          className="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700"
-        />
+        {study.mobile ? (
+          <div className="w-full h-full flex items-center justify-center gap-4 p-6 bg-surface-container-high">
+            <img
+              src={study.image}
+              alt={study.imageAlt}
+              className="h-full max-h-full w-auto rounded-xl shadow-2xl shadow-black/40 group-hover:scale-105 transition-all duration-700 object-contain"
+            />
+            {study.secondImage && (
+              <img
+                src={study.secondImage}
+                alt={`${study.imageAlt} login`}
+                className="h-full max-h-full w-auto rounded-xl shadow-2xl shadow-black/40 group-hover:scale-105 transition-all duration-700 object-contain hidden md:block"
+              />
+            )}
+          </div>
+        ) : (
+          <img
+            src={study.image}
+            alt={study.imageAlt}
+            className="w-full h-full object-cover object-top grayscale opacity-40 group-hover:grayscale-0 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700"
+          />
+        )}
       </div>
       <div className={isLargeCard ? "p-8" : "p-6"}>
         <div

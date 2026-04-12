@@ -3,16 +3,14 @@
 import CountUp from "react-countup";
 
 const stats = [
-  { value: 45, suffix: "+", label: "Projects shipped" },
-  { value: 8, suffix: "", label: "Years in business" },
-  { value: 12, suffix: "", label: "Countries served" },
-  { value: 100, suffix: "%", label: "Happy clients" },
+  { value: 20, suffix: "+", label: "Projects shipped" },
+  { value: 5, suffix: "+", label: "Years in business" },
 ];
 
 export default function Stats() {
   return (
     <section className="py-20 bg-surface-container-lowest border-y border-outline-variant/10">
-      <div className="max-w-7xl mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+      <div className="max-w-7xl mx-auto px-8 grid grid-cols-2 gap-12 text-center max-w-2xl">
         {stats.map((stat) => (
           <div key={stat.label}>
             <div className="text-4xl md:text-5xl font-headline font-bold text-primary mb-2">
