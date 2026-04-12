@@ -34,12 +34,6 @@ const values = [
   },
 ];
 
-const team = [
-  { name: "Rico Buez", role: "Founder & Lead Engineer" },
-  { name: "Open Position", role: "Senior Frontend Engineer" },
-  { name: "Open Position", role: "Mobile Engineer" },
-  { name: "Open Position", role: "Product Designer" },
-];
 
 export default function AboutPage() {
   return (
@@ -126,40 +120,6 @@ export default function AboutPage() {
               </p>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="bg-surface-container-lowest py-24">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="text-center mb-16">
-            <span className="font-mono text-xs uppercase tracking-[0.3em] text-primary mb-4 block">
-              The Team
-            </span>
-            <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight">
-              Small team. Big output.
-            </h2>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {team.map((member) => (
-              <div
-                key={member.name}
-                className="bg-surface-container rounded-xl p-6 border border-outline-variant/10 text-center"
-              >
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-surface-container-high border border-outline-variant/10 flex items-center justify-center">
-                  <span className="material-symbols-outlined text-primary text-3xl">
-                    person
-                  </span>
-                </div>
-                <h4 className="font-headline font-bold text-lg">
-                  {member.name}
-                </h4>
-                <p className="text-on-surface-variant text-sm mt-1">
-                  {member.role}
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
