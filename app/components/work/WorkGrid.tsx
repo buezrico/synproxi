@@ -128,7 +128,7 @@ function CaseStudyCard({ study }: { study: CaseStudy }) {
     >
       <div className={`${aspect} w-full overflow-hidden`}>
         {study.mobile ? (
-          <div className="w-full h-full flex items-center justify-center gap-4 p-6 bg-surface-container-high">
+          <div className="w-full h-full flex items-center justify-center gap-4 p-6">
             <img
               src={study.image}
               alt={study.imageAlt}

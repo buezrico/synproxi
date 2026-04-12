@@ -63,7 +63,7 @@ export default function FeaturedWork() {
             className="group relative grid grid-cols-1 md:grid-cols-12 gap-12 items-center"
           >
             <div
-              className={`${project.reverse ? "md:col-span-7 md:order-2 order-1" : "md:col-span-7"} rounded-2xl overflow-hidden ${project.mobile ? "aspect-[4/3]" : "aspect-video"} bg-surface-container-high border border-outline-variant/20`}
+              className={`${project.reverse ? "md:col-span-7 md:order-2 order-1" : "md:col-span-7"} rounded-2xl overflow-hidden ${project.mobile ? "aspect-[4/3]" : "aspect-video"} ${project.mobile ? "" : "bg-surface-container-high border border-outline-variant/20"}`}
             >
               {project.mobile ? (
                 <div className="w-full h-full flex items-center justify-center gap-4 p-8">
